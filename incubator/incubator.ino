@@ -4,6 +4,7 @@
 #define dht_dpin A0  // Analog Pin sensor is connected to
 int relayPin = 7;
 #include "dht.h"
+#include ""
 
 dht DHT;
 
@@ -37,6 +38,7 @@ void loop() {
 void printReadings() {
   DHT.read11(dht_dpin);
   // Serial.print("Current readHumidity() = ");
+  Serial.print("")
   Serial.print(DHT.temperature);
   // Serial.println(analogRead())
   Serial.print(" ");
